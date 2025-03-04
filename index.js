@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+let arr = [];
 app.post('/create', (req,res) => {
     try {
         const { name, role, salary, company } = req.body
